@@ -1,4 +1,4 @@
-Erlang retreive and decode from an NTP server.
+# Erlang retreive and decode from an NTP server.
 
 Eshell V5.7.2  (abort with ^G)
 1> c(ntp).
