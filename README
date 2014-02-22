@@ -19,3 +19,13 @@ Eshell V5.7.2  (abort with ^G)
  {transmitTimestamp,1309988125.2857387},
  {clientReceiveTimestamp,1309988664.216},
  {offset,-538.9302613735199}}
+
+
+Please note, this function doesn't implement the full NTP
+algorithm. It just does the first step: poll a server without taking
+into account round trip time, jitter, dispersion and all those good
+NTP clustering things.  In other words, it answers the question "what
+time did that server think it was, a few dozen ms ago?"  It doesn't
+answer the question, "what time is it now?"
+
+Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
